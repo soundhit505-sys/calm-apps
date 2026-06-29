@@ -6,6 +6,11 @@
 <meta name="theme-color" content="#070a14">
 <meta name="description" content="呼吸・感情ラベリング・グラウンディングで、高ぶった心をゆっくり整えるためのセルフケア・ツール。">
 <title>いま、ここ — こころを落ち着けるための、3つの道具</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
@@ -167,5 +172,8 @@
   <footer><span>いま、ここ　・　STRESS CARE</span></footer>
 </main>
 
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+</script>
 </body>
 </html>
