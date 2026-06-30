@@ -280,10 +280,10 @@
 
       <div class="toggle-row">
         <span>やさしい音をならす</span>
-        <div class="switch" id="soundSwitch" role="button" aria-pressed="true" tabindex="0"></div>
+        <div class="switch" id="soundSwitch" role="button" aria-pressed="false" tabindex="0"></div>
       </div>
 
-      <div class="field" id="soundTypeField" style="margin-top:24px">
+      <div class="field hide" id="soundTypeField" style="margin-top:24px">
         <label>おとの種類</label>
         <div class="opts vis" id="ambOpts"></div>
         <button class="ctrl prevbtn" id="previewBtn" aria-pressed="false">ためし聞き</button>
@@ -388,7 +388,7 @@
   const SPEEDS={ slow:{label:"ゆっくり",period:4.0}, normal:{label:"ふつう",period:2.6}, fast:{label:"はやい",period:1.5} };
   const AMBIENCE={ suzumushi:{label:"鈴虫"}, sazanami:{label:"さざなみ"}, brown:{label:"ブラウンノイズ"}, dreamcore:{label:"ドリームコア"}, ambient:{label:"アンビエント"} };
 
-  const state={ mode:"breath", pattern:"coherent", breathVis:"orb", eye:"horizontal", eyeVis:"plain", eyeMotion:"smooth", speed:"normal", durSec:300, sound:true, ambience:"dreamcore", volume:0.8, pre:5 };
+  const state={ mode:"breath", pattern:"coherent", breathVis:"orb", eye:"horizontal", eyeVis:"plain", eyeMotion:"smooth", speed:"normal", durSec:300, sound:false, ambience:"dreamcore", volume:0.8, pre:5 };
 
   const $=id=>document.getElementById(id);
   const screens={setup:$("setup"),session:$("session"),done:$("done"),log:$("logScreen")};
